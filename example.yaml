@@ -69,19 +69,16 @@ number:
   - platform: samsung_nasa
     message: 0x4201
     name: Zone 1 Target Temp
-    internal: true
     nasa_device_id: nasa_device_1
     id: zone_target_temp
   - platform: samsung_nasa
     message: 0x42D6
     name: Zone 2 Target Temp
-    internal: true
     nasa_device_id: nasa_device_1
     id: zone2_target_temp
   - platform: samsung_nasa
     message: 0x4235
     name: DHW Target Temperature
-    internal: true
     nasa_device_id: nasa_device_1
     id: hot_water_target_temp
   - platform: samsung_nasa
@@ -117,19 +114,16 @@ switch:
     message: 0x4065
     nasa_device_id: nasa_device_1
     name: "DHW Power"
-    internal: true
     id: dhw_power_switch
   - platform: samsung_nasa
     message: 0x4000
     nasa_device_id: nasa_device_1
     name: Zone 1 Power
-    internal: true
     id: zone_power
   - platform: samsung_nasa
     message: 0x411E
     nasa_device_id: nasa_device_1
     name: Zone 2 Power
-    internal: true
     id: zone2_power
 
 sensor:
@@ -138,19 +132,16 @@ sensor:
     message: 0x4237
     nasa_device_id: nasa_device_1
     name: "DHW Temperature"
-    internal: true
     id: hot_water_current_temp
   - platform: samsung_nasa
     message: 0x4203
     nasa_device_id: nasa_device_1
     name: "Zone 1 Indoor Temp"
-    internal: true
     id: zone_room_temp
   - platform: samsung_nasa
     message: 0x42D4
     nasa_device_id: nasa_device_1
     name: "Zone 2 Indoor Temp"
-    internal: true
     id: zone2_room_temp
 
   # Valves & Pumps
@@ -171,7 +162,6 @@ sensor:
     message: 0x408A
     nasa_device_id: nasa_device_1
     name: 2-Way Valve
-    internal: true
     id: two_way_valve 
   # 0x4067
   # 0 = room; 1 = tank
@@ -179,7 +169,6 @@ sensor:
     message: 0x4067
     nasa_device_id: nasa_device_1
     name: 3-Way Valve
-    internal: true
     id: three_way_valve
 
   # Error Status
@@ -307,7 +296,6 @@ binary_sensor:
     message: 0x4089
     nasa_device_id: nasa_device_1
     name: Primary Water Pump
-    internal: true
     id: primary_water_pump
   - platform: samsung_nasa
     message: 0x8010
